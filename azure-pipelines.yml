@@ -47,7 +47,7 @@ steps:
   displayName: 'Publish NuGet package'
   inputs:
     command: 'push'
-    packagesToPush: '$(Build.ArtifactStagingDirectory)/**/*Tailspin.SpaceGame.Web.Models'
+    packagesToPush: '$(System.TeamProject)/Tailspin.SpaceGame.Web.Models'
     nuGetFeedType: 'internal'
     publishVstsFeed: '77b2fc3f-ed37-45f2-b14e-36ebe8af6c65'
   condition: succeeded()
